@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Страница с изображением</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Добавляем иконку для браузера -->
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/anlomov/stud-lo/main/myicon.png">
-    
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="icon" href="https://raw.githubusercontent.com/anlomov/stud-lo/3b3cb73034edd59fc80075a492d196c8f82bbf59/myicon.png" type="image/png">
     <style>
-      /* Стили для центрирования изображения и занимания всего экрана */
-      html, body {
-        height: 100%;
-        margin: 0;
-      }
       body {
+        margin: 0;
+        background-color: white;
+      }
+      
+      .image-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        cursor: url('https://raw.githubusercontent.com/anlomov/stud-lo/main/kursor.png'), auto;
-        background-image: url('https://raw.githubusercontent.com/anlomov/stud-lo/main/fon.png');
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
+        height: 100vh;
       }
-      img {
+      
+      .https://raw.githubusercontent.com/anlomov/stud-lo/main/studlo.jpg {
         max-width: 100%;
         max-height: 100%;
-        margin: auto;
+        object-fit: contain;
+      }
+      
+      body {
+        cursor: url('https://raw.githubusercontent.com/anlomov/stud-lo/main/kursor.png'), auto;
       }
     </style>
   </head>
+  
   <body>
-    <img src="https://raw.githubusercontent.com/anlomov/stud-lo/main/studlo.jpg" alt="Студенты ЛОМО"/>
+    <h6></h6>
+    <img src="https://raw.githubusercontent.com/anlomov/stud-lo/main/fon.png" style="position: fixed; top: 0; left: 0; z-index: -1;">
+    <div class="image-container">
+      <img src="https://raw.githubusercontent.com/anlomov/stud-lo/main/studlo.jpg">
+    </div>
   </body>
 </html>
 
