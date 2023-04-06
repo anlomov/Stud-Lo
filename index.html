@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
-    <meta charset="utf-8">
-    <link rel="icon" href="https://raw.githubusercontent.com/anlomov/stud-lo/3b3cb73034edd59fc80075a492d196c8f82bbf59/myicon.png" type="image/png">
+    <title>Страница с изображением</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Добавляем иконку для браузера -->
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/anlomov/stud-lo/main/myicon.png">
+    
     <style>
-      body {
+      /* Стили для центрирования изображения и занимания всего экрана */
+      html, body {
+        height: 100%;
         margin: 0;
-        background-color: white;
       }
-      
-      .image-container {
+      body {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        cursor: url('https://raw.githubusercontent.com/anlomov/stud-lo/main/kursor.png'), auto;
+        background-image: url('https://raw.githubusercontent.com/anlomov/stud-lo/main/fon.png');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
       }
-      
-      .https://raw.githubusercontent.com/anlomov/stud-lo/main/studlo.jpg {
+      img {
         max-width: 100%;
         max-height: 100%;
-        object-fit: contain;
-      }
-      
-      body {
-        cursor: url('https://raw.githubusercontent.com/anlomov/stud-lo/main/kursor.png'), auto;
+        margin: auto;
       }
     </style>
   </head>
-  
   <body>
-    <h6></h6>
-    <map name="image-map">
-      <area target="_blank" alt="" title="" href="https://youtu.be/qyzwNoxGmlQ" coords="649,3019,49" shape="circle">
-      <area target="_blank" alt="" title="" href="https://youtu.be/jG3_Aebd-z0" coords="1270,2895,54" shape="circle">
-        </map>
-    <img src="https://raw.githubusercontent.com/anlomov/stud-lo/main/fon.png" style="position: fixed; top: 0; left: 0; z-index: -1;">
-    <div class="image-container">
-      <img src="https://raw.githubusercontent.com/anlomov/stud-lo/main/studlo.jpg">
-    </div>
+    <img src="https://raw.githubusercontent.com/anlomov/stud-lo/main/studlo.jpg" alt="Студенты ЛОМО"/>
   </body>
 </html>
+
